@@ -1,6 +1,6 @@
 {
   "scripts": {
-  "start": "parcel src/index.pug",
+  "start": "parcel src/pug/pages/*",
   "build": "parcel build"
 },
   "devDependencies": {
