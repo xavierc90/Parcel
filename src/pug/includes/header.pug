@@ -1,12 +1,16 @@
-header
+header.bg-yellow-500.flex.justify-between
   a(href="/")
-    img(src="../../../assets/img/svg/logo.svg", alt="Logo Bbrands Agency")
-  a(href="/")
-    img(src="../../../assets/img/svg/nav.svg", alt="Logo Bbrands Agency")
-  button 
+    img.p-5(src="../../../assets/img/svg/logo.svg", alt="Logo Bbrands Agency")
+  button(id="iconMenu",
+          class="z-30 w-8 h-5 flex flex-col justify-between *:block *:h-[2px] *:w-full *:bg-black *:transition-all *:duration-300 *:ease-in-out lg:hidden",
+          aria-label="Menu")
     span
-  nav
-    ul
+    span
+    span
+
+  nav(id="menu"
+          class="flex bg-indigo text-white fixed inset-0 text-2xl z-20 invisible lg:relative lg:bg-transparent lg:text-black lg:visible lg:text-base lg:font-bold lg:uppercase")
+    ul.hidden
       li
         a(href="works.pug") Works
       li
@@ -15,7 +19,7 @@ header
         a(href="contact.pug") Contact
       li
         a(href="team.pug") Team
-    ul.flex
+    ul.hidden.flex
       li
         a(href="#")
             img(src="../../../assets/img/svg/behance.svg", alt="Behance")
